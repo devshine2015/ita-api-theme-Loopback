@@ -1,0 +1,145 @@
+html {
+  font-size: 10px;
+  font-weight: 300;
+}
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+input[type=data]::-webkit-inner-spin-button,
+input[type=data]::-webkit-outter-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outter-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.mainContainer {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-weight: 400;
+  background-image: url('../images/login-bg.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.mainContainer .loginContainer {
+  position: relative;
+  height: 100%;
+}
+.mainContainer .loginContainer .form {
+  position: absolute;
+  width: 55rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 0 8rem;
+  background-color: #000000;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.mainContainer .loginContainer .form .logo {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  float: left;
+  text-align: center;
+  margin: 8rem 0;
+}
+.mainContainer .loginContainer .form .logo img{
+  height: 100%;
+}
+.mainContainer .loginContainer .form .detail {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  float: left;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.mainContainer .loginContainer .form .detail.login-error {
+  display: none;
+  color: #c9212e;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.mainContainer .loginContainer .form .formInput {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.mainContainer .loginContainer .form .formInput .text {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.mainContainer .loginContainer .form .formInput .input {
+  position: relative;
+  width: calc(100% - 2rem);
+  float: left;
+  font-size: 2rem;
+  color: white !important;
+  height: 5rem;
+  line-height: 5rem;
+  border: none;
+  border-radius: 0;
+  background: black;
+  border-bottom: 3px solid white;
+  margin-bottom: 8rem;
+  -webkit-appearance: none;
+  padding: 0 1rem;
+}
+input.input.pass {
+  margin: 0 !important;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 9999px black;
+  -webkit-text-fill-color: white !important;
+}
+.mainContainer .loginContainer .desc{
+  position: absolute;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: calc(100% - 16rem);
+}
+.mainContainer .loginContainer .form .login-btn {
+  position: relative;
+  width: 100%;
+  float: left;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 12rem;
+  font-weight: 600;
+  border: solid 3px #ffffff;
+  cursor: pointer;
+}
